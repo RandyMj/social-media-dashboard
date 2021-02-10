@@ -1,38 +1,238 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" type="image/png" sizes="32x32" href="./src/images/favicon-32x32.png" />
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" href="./src/css/style.css">
-    <title>Social Media Dashboard</title>
-  </head>
-  <body>
-    <main>
-      <div class="background-top"></div>
-      <div class="background"></div>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" type="image/png" sizes="32x32" href="./src/images/favicon-32x32.png" />
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
 
-      <div class="grid-container">
+  <link rel="stylesheet" href="./src/css/style.css">
+  <title>Social Media Dashboard</title>
+</head>
 
-        <div class="header">
-          <h2>Social Media Dashboard</h2>
-          <span class="followers">Total Followers: 23k</span>
+<body>
+  <main>
+    <div class="background-top"></div>
+    <div class="background"></div>
 
-          <div class="theme">
-            <span class="mode">Dark Mode</span>
-            <div class="switch-container">
-              <input type="checkbox" id="switch">
-              <label for="switch" class="lbl"></label>
-            </div>
+    <div class="grid-container">
+      <div class="header">
+        <h2>Social Media Dashboard</h2>
+        <span class="followers">Total Followers: 23k</span>
+
+        <div class="theme">
+          <span class="mode">Dark Mode</span>
+          <div class="switch-container">
+            <input type="checkbox" id="switch">
+            <label for="switch" class="lbl"></label>
+          </div>
+        </div>
+      </div>
+
+      <div class="quick-view">
+        <div class="main-box" id="facebook">
+          <div class="social-link">
+            <img src="./src/images/icon-facebook.svg" alt="">
+            <p>
+              @nathanf
+            </p>
+          </div>
+          <div class="followers">
+            <p>1978</p>
+            <span>FOLLOWERS</span>
+          </div>
+          <div class="proffit-losses">
+            <p style="color: hsl(163, 72%, 41%);">
+              <img src="./src/images/icon-up.svg" alt="">
+              12 Today
+            </p>
           </div>
         </div>
 
+        <div class="main-box" id="twitter">
+          <div class="social-link">
+            <img src="./src/images/icon-twitter.svg" alt="">
+            <p>
+              @nathanf
+            </p>
+          </div>
+          <div class="followers">
+            <p>1044</p>
+            <span>FOLLOWERS</span>
+          </div>
+          <div class="proffit-losses">
+            <p style="color: hsl(163, 72%, 41%);">
+              <img src="./src/images/icon-up.svg" alt="">
+              99 Today
+            </p>
+          </div>
+        </div>
 
+        <div class="main-box" id="instagram">
+          <div class="social-link">
+            <img src="./src/images/icon-instagram.svg" alt="">
+            <p>
+              @nathanf
+            </p>
+          </div>
+          <div class="followers">
+            <p>11k</p>
+            <span>FOLLOWERS</span>
+          </div>
+          <div class="proffit-losses">
+            <p style="color: hsl(163, 72%, 41%);">
+              <img src="./src/images/icon-up.svg" alt="">
+              1099 Today
+            </p>
+          </div>
+        </div>
+
+        <div class="main-box" id="youtube">
+          <div class="social-link">
+            <img src="./src/images/icon-youtube.svg" alt="">
+            <p>
+              @nathanf
+            </p>
+          </div>
+          <div class="followers">
+            <p>8239</p>
+            <span>SUBSCRIBERS</span>
+          </div>
+          <div class="proffit-losses">
+            <p style="color: hsl(356, 69%, 56%);">
+              <img src="./src/images/icon-down.svg" alt="">
+              144 Today
+            </p>
+          </div>
+        </div>
       </div>
 
-    </main>
-  </body>
+      <div class="overview-text">
+        <p>Overview - Today</p>
+      </div>
+
+      <div class="overview">
+
+        <div class="overview-box">
+          <div class="top">
+            <p>Page Views</p>
+            <img src="./src/images/icon-facebook.svg" alt="">
+          </div>
+          <div class="bottom">
+            <p class="number">87</p>
+            <p class="percentage" style="color: hsl(163, 72%, 41%);">
+              <img src="./src/images/icon-up.svg" alt="">
+              3%
+            </p>
+          </div>
+        </div>
+
+        <div class="overview-box">
+          <div class="top">
+            <p>Likes</p>
+            <img src="./src/images/icon-facebook.svg" alt="">
+          </div>
+
+          <div class="bottom">
+            <p class="number">52</p>
+            <p class="percentage" style="color: hsl(356, 69%, 56%);">
+              <img src="./src/images/icon-down.svg" alt="">
+              2%
+            </p>
+          </div>
+        </div>
+
+        <div class="overview-box">
+          <div class="top">
+            <p>Profile Views</p>
+            <img src="./src/images/icon-instagram.svg" alt="">
+          </div>
+          <div class="bottom">
+            <p class="number">52k</p>
+            <p class="percentage" style="color: hsl(163, 72%, 41%);">
+              <img src="./src/images/icon-up.svg" alt="">
+              1375%
+            </p>
+          </div>
+        </div>
+
+        <div class="overview-box">
+          <div class="top">
+            <p>Likes</p>
+            <img src="./src/images/icon-instagram.svg" alt="">
+          </div>
+          <div class="bottom">
+            <p class="number">5462</p>
+            <p class="percentage" style="color: hsl(163, 72%, 41%);">
+              <img src="./src/images/icon-up.svg" alt="">
+              2257%
+            </p>
+          </div>
+        </div>
+
+        <div class="overview-box">
+          <div class="top">
+            <p>Retweets</p>
+            <img src="./src/images/icon-twitter.svg" alt="">
+          </div>
+          <div class="bottom">
+            <p class="number">117</p>
+            <p class="percentage" style="color: hsl(163, 72%, 41%);">
+              <img src="./src/images/icon-up.svg" alt="">
+              303%
+            </p>
+          </div>
+        </div>
+
+        <div class="overview-box">
+          <div class="top">
+            <p>Likes</p>
+            <img src="./src/images/icon-twitter.svg" alt="">
+          </div>
+          <div class="bottom">
+            <p class="number">507</p>
+            <p class="percentage" style="color: hsl(163, 72%, 41%);">
+              <img src="./src/images/icon-up.svg" alt="">
+              553%
+            </p>
+          </div>
+        </div>
+
+        <div class="overview-box">
+          <div class="top">
+            <p>Total Views</p>
+            <img src="./src/images/icon-youtube.svg" alt="">
+          </div>
+          <div class="bottom">
+            <p class="number">107</p>
+            <p class="percentage" style="color: hsl(356, 69%, 56%);">
+              <img src="./src/images/icon-down.svg" alt="">
+              303%
+            </p>
+          </div>
+        </div>
+
+        <div class="overview-box">
+          <div class="top">
+            <p>Likes</p>
+            <img src="./src/images/icon-youtube.svg" alt="">
+          </div>
+          <div class="bottom">
+            <p class="number">1407</p>
+            <p class="percentage" style="color: hsl(356, 69%, 56%);">
+              <img src="./src/images/icon-down.svg" alt="">
+              12%
+            </p>
+          </div>
+        </div>
+      </div>
+
+
+    </div>
+
+  </main>
+</body>
+
 </html>
