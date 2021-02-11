@@ -1,0 +1,94 @@
+main {
+    overflow: hidden;
+}
+main .grid-container {
+    width: 100%;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 100px 15px  200px 30px repeat(2, 175px);
+}
+main .grid-container .header {
+    margin-left: 10.5%;
+    display: flex;
+    width: 1155px;
+    justify-content: space-between;
+    align-items: center;
+}
+main .grid-container .header .theme .switch-container .lbl::after {
+    top: 2.5px;
+    left: 3px;
+}
+
+#switch:checked+.lbl::after {
+    left: 21.5px;
+}
+
+main .quick-view .main-box .followers {
+    height: 125px;
+}
+main .grid-container .header h2 {
+    width: 300px;
+}
+main .grid-container .header h2,
+main .grid-container .header .followers {
+    margin-top: 0;
+    margin-left: 0;
+}
+main .grid-container .header .followers::after {
+    display: none;
+}
+main .grid-container .header .theme {
+    width: 115px;
+}
+main .grid-container .header .theme .mode {
+    margin-right: 10px;
+}
+
+main .quick-view {
+    grid-area: 3/1/4/4;
+    display: flex;
+    width: 1180px;
+    margin-left: 10.5%;
+}
+main .quick-view #facebook,
+main .quick-view #twitter,
+main .quick-view #instagram,
+main .quick-view #youtube {
+    width: 275px;
+    height: 195px;
+    margin: 0;
+    margin-right: 20px;
+}
+/* main .quick-view .main-box:hover,
+main .grid-container .overview .overview-box:hover {
+    cursor: pointer;
+    background: hsl(230, 22%, 32%);
+} */
+
+main .grid-container .overview-text {
+    grid-area: 4/1/5/4;
+}
+main .grid-container .overview-text p {
+    font-size: 22px;
+    font-weight: 700;
+    margin: 0;
+    margin-left: 10.5%;
+    margin-top: 20px;
+}
+main .grid-container .overview {
+    grid-area: 5/1/7/4;
+    display: grid;
+    grid-template-columns: repeat(4, 275px);
+    grid-template-rows: repeat(2, 130px);
+    margin-top: 20px;
+    margin-left: 10.5%;
+    grid-gap: 20px;
+}
+main .grid-container .overview .overview-box {
+    width: 275px;
+}
+main .grid-container .overview .overview-box .top,
+main .grid-container .overview .overview-box .bottom {
+    width: 200px;
+}
+
+

@@ -40,6 +40,7 @@ main {
 main .grid-container {
     position: absolute;
     top: 0;
+    left: 0;
     width: 100vw;
     height: 100vh;
     display: grid;
@@ -56,6 +57,7 @@ main .grid-container .header {
 
 main .grid-container .header h2 {
     font-size: 24px;
+    color: hsl(0, 0%, 100%);
 }
 
 main .grid-container .header .followers {
@@ -87,12 +89,12 @@ main .grid-container .header .followers::after {
     /* This creates the border. Replace black with whatever color you want. */
 }
 
+
+/* HEADER SWITCH */
 main .grid-container .header .theme {
     margin-left: 10%;
     margin-top: 15px;
 }
-
-/* HEADER SWITCH */
 main .grid-container .header .theme {
     display: flex;
     width: 80%;
@@ -142,10 +144,7 @@ main .quick-view {
     grid-area: 3/1/7/4;
 }
 
-main .quick-view #facebook,
-main .quick-view #twitter,
-main .quick-view #instagram,
-main .quick-view #youtube {
+main .quick-view .main-box {
     width: 325px;
     height: 225px;
     background: hsl(228, 28%, 20%);
